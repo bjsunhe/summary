@@ -1,3 +1,6 @@
+```
+
+
 const { Configuration, OpenAIApi } = require("openai");
 const readlineSync = require("readline-sync");
 require("dotenv").config();
@@ -51,3 +54,6 @@ require("dotenv").config();
     }
   }
 })();
+
+
+```
