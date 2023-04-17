@@ -41,7 +41,7 @@ const messages = (user_input) => {
 };
 
 (async () => {
-  openaiCompletion(messages("what is gpt"));
-  openaiCompletion(messages("what is gpt-3"));
-  openaiCompletion(messages("what is the mechanism of gpt-3"));
+  await openaiCompletion(messages("what is gpt"));
+  await openaiCompletion(messages("what is gpt-3"));
+  await openaiCompletion(messages("what is the mechanism of gpt-3"));
 })();
