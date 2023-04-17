@@ -1,0 +1,24 @@
+{
+  "name": "summary",
+  "version": "1.0.0",
+  "description": "```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjsunhe/summary.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bjsunhe/summary/issues"
+  },
+  "homepage": "https://github.com/bjsunhe/summary#readme",
+  "dependencies": {
+    "openai": "^3.2.1",
+    "readline-sync": "^1.4.10"
+  }
+}
