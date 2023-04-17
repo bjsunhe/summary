@@ -123,6 +123,18 @@ require("dotenv").config();
 
 ```
 
+
+
+
+
+
+
+Andy Saperstein, the current co-president of Morgan Stanley, is a top contender to succeed CEO James Gorman when he eventually steps down. Saperstein oversees the firm's $4.5 trillion wealth management business, which has been credited with driving the company's market value above rival Goldman Sachs. Saperstein and Gorman have led a revolution in Wall Street culture, prioritizing steady, fee-generating businesses over risky trading. The firm's move towards wealth management has made it a darling of investors and the envy of peers. Saperstein's main competition for the CEO role is co-president Ted Pick and asset management head Dan Simkowitz. While he lacks overseas experience, colleagues say his odds of becoming CEO have improved, and his relationship-building skills have been described as his secret weapon.
+
+
+
+
+
 China's central bank, the People's Bank of China (PBOC), injected the smallest amount of medium-term cash into the banking system since November, with a net injection of CNY20bn ($2.9bn) in April. The move comes as China's economy rebounds and may help stabilise borrowing costs that are under pressure to rise as demand to raise funds increases. The PBOC has now taken the action for five months in a row. Meanwhile, China's efforts to ensure there is enough liquidity in markets may mean a cut in deposit rates, encouraging profitability and more borrowing, even though smaller lenders have already reduced deposit rates this month."
 
 
