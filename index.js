@@ -22,6 +22,7 @@ require("dotenv").config();
     messages.push({ role: "user", content: user_input });
 
     try {
+        console.log(messages)
       const completion = await openai.createChatCompletion({
         model: "gpt-3.5-turbo",
         messages: messages,
