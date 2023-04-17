@@ -129,6 +129,15 @@ require("dotenv").config();
 
 
 
+
+
+The People's Bank of China injected 170 billion yuan ($25 billion) of funds into the banking system through the medium-term lending facility in April, resulting in a 20 billion yuan net injection, which was the smallest since November. The PBOC left interest rates unchanged at 2.75% for the eighth month in a row. This marks the fifth month in a row that the central bank has taken action to inject capital, as China's economic recovery appears to be on track. The PBOC is reportedly evaluating the impact of its March easing step of cutting a banking reserve ratio and providing more cash to support growth. China's growth target of around 5% this year could be achieved as the property market improves. However, immediate tightening is unlikely as the PBOC has stated that the economic recovery foundation is "not solid yet.
+
+
+
+
+
+
 The S&P 500 has historically rallied after the Federal Reserve has finished raising interest rates, however, markets might not get the same boost this time around, warn some investors and analysts. According to Goldman Sachs, going back to 1982, the S&P 500 returned an average of 19% in the 12 months after the federal-funds rate peaked. Goldman studied six Fed tightening cycles over that time period and found that stocks rose after all but one of them. However, Goldman is skeptical markets will rally again once the Fed is done with its current set of interest-rate increases. The S&P 500 trades at about 18 times its next 12 months of expected earnings, ranking in the 81st percentile for valuations going back the past 40 years, according to Goldman. The bank expects earnings growth to be almost flat for S&P 500 companies for the full year, well below the average 9% growth rate seen at the end of hiking cycles that weren't accompanied by recessions.
 
 
