@@ -44,7 +44,7 @@ const messages = (user_input) => {
 const summarize=async (article) => {
   console.log(article.length/4/1000)
   console.log(article.length/4/1000*0.002*7+'cny')
-  await openaiCompletion(messages(`This article is from Wall Street Journal. You are a financial analyst, please summarize this article without omitting any numbers mentioned in the article. Be sure not to omit any of the numbers mentioned in the article. Never miss any numbers in the article. The summary can be very long.  Article: ${article}`));
+  await openaiCompletion(messages(`This article is from Wall Street Journal. You are a financial analyst, please summarize this article without omitting any numbers mentioned in the article. Be sure not to omit any of the numbers mentioned in the article. Never miss any numbers in the article. You should integrate all the numbers appeared in the article to the summary. The summary can be very long.  Article: ${article}`));
   
 }
 
