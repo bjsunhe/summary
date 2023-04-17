@@ -123,9 +123,11 @@ require("dotenv").config();
 
 ```
 
+China's central bank, the People's Bank of China (PBOC), injected the smallest amount of medium-term cash into the banking system since November, with a net injection of CNY20bn ($2.9bn) in April. The move comes as China's economy rebounds and may help stabilise borrowing costs that are under pressure to rise as demand to raise funds increases. The PBOC has now taken the action for five months in a row. Meanwhile, China's efforts to ensure there is enough liquidity in markets may mean a cut in deposit rates, encouraging profitability and more borrowing, even though smaller lenders have already reduced deposit rates this month."
 
 
 
+China's central bank has injected the smallest amount of medium-term cash into the banking system since November 2020, providing CNY 170bn ($25bn) in funds to banks via the medium-term lending facility. The move represents a net injection of CNY 20bn in April and marks the PBOC's fifth such action in as many months. As the Chinese economy continues to recover, PBOC Governor Yi Gang has said achieving the growth target of around 5% this year is possible, thanks in part to the improved property market. China is currently focused on stabilizing borrowing costs despite small lenders cutting deposit rates in April."
 
 
 

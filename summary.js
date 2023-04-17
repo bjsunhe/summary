@@ -49,7 +49,7 @@ const summarize=async (article) => {
 }
 
 (async ()=>{
-    const content=fs.readFileSync('./2-1.md',{encoding:'utf8'})
+    const content=fs.readFileSync('./3.md',{encoding:'utf8'})
     const contentJSON=JSON.parse(content)
 
     await summarize(`
