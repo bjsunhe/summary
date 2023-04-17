@@ -42,7 +42,7 @@ const messages = (user_input) => {
 
 const summarize=async (article) => {
   console.log(article.length/4/1000)
-  console.log(article.length/4/1000*0.002+'$')
+  console.log(article.length/4/1000*0.002*7+'cny')
   await openaiCompletion(messages(`You are a financial analyst, please summarize this article without missing any numbers. Be sure not to omit any of the numbers mentioned in the article. The summary can be of any length.Article: ${article}`));
   
 }
