@@ -28,7 +28,7 @@ const openaiCompletion = async ({messages,user_input}) => {
 };
 
 const messages = (user_input) => {
-  const messages = [];
+  const messages = [{"role": "system", "content": "You are a professional financial analyst. I will give you articles one by one. Summarize each article without omitting any numbers mentioned in the article. Be sure not to omit any of the numbers mentioned in the article. Never miss any numbers in the article. You should integrate all the numbers appeared in the article to the summary. The summary can be very long. The length of the summary should be at least 30% of the original article."}];
   for (const [input_text, completion_text] of history) {
     messages.push({ role: "user", content: input_text });
     messages.push({ role: "assistant", content: completion_text });
@@ -44,7 +44,7 @@ const messages = (user_input) => {
 const summarize=async (article) => {
   console.log(article.length/4/1000)
   console.log(article.length/4/1000*0.002*7+'cny')
-  await openaiCompletion(messages(`This article is from Wall Street Journal. You are a financial analyst, please summarize this article without omitting any numbers mentioned in the article. Be sure not to omit any of the numbers mentioned in the article. Never miss any numbers in the article. You should integrate all the numbers appeared in the article to the summary. The summary can be very long. The length of the summary should be at least 30% of the original article.  Article: ${article}`));
+  await openaiCompletion(messages(`This article is from Wall Street Journal. Summarize this article: "{article}"  ${article}`));
   
 }
 
