@@ -1,5 +1,6 @@
 const { Configuration, OpenAIApi } = require("openai");
-const fs=require('fs')
+const fs=require('fs');
+const { Console } = require("console");
 require("dotenv").config();
 
 const history = [];
@@ -23,12 +24,12 @@ const openaiCompletion = async ({messages,user_input}) => {
 
   const completion_text = completion.data.choices[0].message.content;
   console.log(completion_text);
-
+  console.log(completion_text.length)
   constructHistory(user_input, completion_text);
 };
 
 const messages = (user_input) => {
-  const messages = [{"role": "system", "content": "You are a professional financial analyst. I will give you articles one by one. Summarize each article without omitting any numbers mentioned in the article. Be sure not to omit any of the numbers mentioned in the article. Never miss any numbers in the article. You should integrate all the numbers appeared in the article to the summary. The summary can be very long. The length of the summary should be at least 30% of the original article."}];
+  const messages = [{"role": "system", "content": "You are a professional financial analyst. I will give you articles one by one. Summarize each article without omitting any numbers mentioned in the article. Be sure not to omit any of the numbers mentioned in the article. Never miss any numbers in the article. You should integrate all the numbers appeared in the article to the summary. The summary can be very long. The length of the summary should be at least 30% of the original article. The length of the summary or the completion on your side should not be less than 30% of the original article. "}];
   for (const [input_text, completion_text] of history) {
     messages.push({ role: "user", content: input_text });
     messages.push({ role: "assistant", content: completion_text });
@@ -37,14 +38,15 @@ const messages = (user_input) => {
   messages.push({ role: "user", content: user_input });
 
   console.log(messages);
-
+  
   return { messages, user_input };
 };
 
 const summarize=async (article) => {
+  console.log(article.length)
   console.log(article.length/4/1000)
   console.log(article.length/4/1000*0.002*7+'cny')
-  await openaiCompletion(messages(`This article is from Wall Street Journal. Summarize this article: "{article}"  ${article}`));
+  await openaiCompletion(messages(`Summarize this article: "{article}"  ${article}`));
   
 }
 
