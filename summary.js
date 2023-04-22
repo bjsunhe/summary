@@ -50,15 +50,19 @@ const summarize=async (article) => {
   
 }
 
-(async ()=>{
-    const content=fs.readFileSync('./3.md',{encoding:'utf8'})
+const articleSummarize=async (file)=>{
+    const content=fs.readFileSync(file,{encoding:'utf8'})
     const contentJSON=JSON.parse(content)
+    // ${contentJSON.content}
 
     await summarize(`
 
 
-        ${contentJSON.content}
+        
+        ${contentJSON}
 
 
     `)
-})()
+}
+
+articleSummarize('./3.md')
