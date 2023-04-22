@@ -81,10 +81,10 @@ const summarizeAllData = (dirname)=>{
 
   filenames.forEach(async function(filename,index) {
     (function (filename,index){
-        setTimeout(()=>{
-          articleSummarize(dirname+filename,filename)
+        setTimeout(async ()=>{
+          await articleSummarize(dirname+filename,filename)
           console.log(filename)
-        },index*30000)
+        },index*10000)
       }
     )(filename,index)
     
