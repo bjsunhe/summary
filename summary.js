@@ -25,6 +25,8 @@ const openaiCompletion = async ({messages,user_input}) => {
   const completion_text = completion.data.choices[0].message.content;
   console.log(completion_text);
   console.log(completion_text.length)
+  fs.writeFileSync(`161-summary.md`,completion_text)
+
   constructHistory(user_input, completion_text);
 };
 
@@ -63,6 +65,9 @@ const articleSummarize=async (file)=>{
 
 
     `)
+
+
+
 }
 
 articleSummarize('./data-source/161.md')
