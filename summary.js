@@ -54,14 +54,14 @@ const summarize=async (article) => {
 
 const articleSummarize=async (file)=>{
     const content=fs.readFileSync(file,{encoding:'utf8'})
-    const contentJSON=JSON.parse(content)
+    // const contentJSON=JSON.parse(content)
     // ${contentJSON.content}
 
     await summarize(`
 
 
         
-        ${contentJSON}
+        ${content}
 
 
     `)
