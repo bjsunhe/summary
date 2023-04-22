@@ -70,4 +70,18 @@ const articleSummarize=async (file)=>{
 
 }
 
-articleSummarize('./data-source/161.md')
+
+const summarizeAllData =(dirname)=>{
+  fs.readdir(dirname, function(err, filenames) {
+  
+    filenames.forEach(function(filename) {
+      console.log(filename)
+      articleSummarize(dirname+filename)
+    });
+  });
+}
+
+summarizeAllData('./data-source/')
+
+
+
