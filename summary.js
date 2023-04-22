@@ -84,7 +84,7 @@ const summarizeAllData = (dirname)=>{
         setTimeout(()=>{
           articleSummarize(dirname+filename,filename)
           console.log(filename)
-        },index*5000)
+        },index*30000)
       }
     )(filename,index)
     
