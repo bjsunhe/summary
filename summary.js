@@ -65,4 +65,4 @@ const articleSummarize=async (file)=>{
     `)
 }
 
-articleSummarize('./3.md')
+articleSummarize('./data-source/161.md')
