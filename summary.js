@@ -75,13 +75,13 @@ const articleSummarize=async (file)=>{
 }
 
 
-const summarizeAllData =(dirname)=>{
-  fs.readdir(dirname, function(err, filenames) {
-  
-    filenames.forEach(function(filename) {
-      console.log(filename)
-      articleSummarize(dirname+filename)
-    });
+const summarizeAllData = (dirname)=>{
+  let filenames=fs.readdirSync(dirname);
+
+
+  filenames.forEach(async function(filename) {
+    console.log(filename)
+    await articleSummarize(dirname+filename)
   });
 }
 
