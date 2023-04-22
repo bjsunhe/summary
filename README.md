@@ -127,6 +127,10 @@ require("dotenv").config();
 
 
 
+
+
+
+
  'According to a Wall Street Journal article, Andy Saperstein, Morgan Stanley’s co-president, is one of the top candidates to take over as CEO when James Gorman steps down. Saperstein’s leadership in the steady and consistent business of wealth management and his ability to transform the company’s culture have resulted in his current success. Under his leadership, the $4.5 trillion asset management team has been instrumental in catapulting Morgan Stanley’s market value above its archrival, Goldman Sachs. Saperstein is in close competition with investment bank boss Ted Pick and asset management head Dan Simkowitz. Although he lacks foreign corporate experience and has not managed acute risks endemic to trading, his colleagues harbor high praise and believe his chances for election have improved. Morgan Stanley’s pivot towards wealth management has resulted in the most profitable year of earnings in 2020, predominantly driven by the portfolio Saperstein’s team operates. His acquisition of Solium Capital and the recent purchase of retail brokerage ETrade Financial Corp have helped the company thrive throughout the pandemic, bringing in more than 50% of Morgan Stanley’s yearly earnings. Despite being undervalued and disregarded by many people in the past, Saperstein’s success & experience have intrigued more people, and many have immense trust in his leadership style.'
 
 

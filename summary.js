@@ -48,6 +48,10 @@ const summarize=async (article) => {
   console.log(article.length)
   console.log(article.length/4/1000)
   console.log(article.length/4/1000*0.002*7+'cny')
+  if(article.length/4/1000>4){
+    console.log('too large')
+    return 
+  }
   await openaiCompletion(messages(`Summarize this article: "{article}"  ${article}`));
   
 }
