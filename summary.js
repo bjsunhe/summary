@@ -48,7 +48,7 @@ const summarize=async (article,filename) => {
   console.log(article.length)
   console.log(article.length/4/1000)
   console.log(article.length/4/1000*0.002*7+'cny')
-  if(article.length/4/1000>4){
+  if(article.length/4/1000>3){
     console.log('too large')
     return 
   }
