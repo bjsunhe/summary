@@ -11,7 +11,7 @@ const constructHistory = (user_input, completion_text) => {
   console.log(history);
 };
 
-const openaiCompletion = async ({messages,user_input}) => {
+const openaiCompletion = async ({messages,user_input},filename) => {
   const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
   });
@@ -25,7 +25,7 @@ const openaiCompletion = async ({messages,user_input}) => {
   const completion_text = completion.data.choices[0].message.content;
   console.log(completion_text);
   console.log(completion_text.length)
-  fs.writeFileSync(`161-summary.md`,completion_text)
+  fs.writeFileSync(`${filename.split('.')[0]}-summary.md`,completion_text)
 
   constructHistory(user_input, completion_text);
 };
@@ -44,7 +44,7 @@ const messages = (user_input) => {
   return { messages, user_input };
 };
 
-const summarize=async (article) => {
+const summarize=async (article,filename) => {
   console.log(article.length)
   console.log(article.length/4/1000)
   console.log(article.length/4/1000*0.002*7+'cny')
@@ -52,11 +52,11 @@ const summarize=async (article) => {
     console.log('too large')
     return 
   }
-  await openaiCompletion(messages(`Summarize this article: "{article}"  ${article}`));
+  await openaiCompletion(messages(`Summarize this article: "{article}"  ${article}`),filename);
   
 }
 
-const articleSummarize=async (file)=>{
+const articleSummarize=async (file,filename)=>{
     const content=fs.readFileSync(file,{encoding:'utf8'})
     // const contentJSON=JSON.parse(content)
     // ${contentJSON.content}
@@ -68,7 +68,7 @@ const articleSummarize=async (file)=>{
         ${content}
 
 
-    `)
+    `,filename)
 
 
 
@@ -79,11 +79,16 @@ const summarizeAllData = (dirname)=>{
   let filenames=fs.readdirSync(dirname);
 
 
-  filenames.forEach(async function(filename) {
-    console.log(filename)
-    setTimeout(async ()=>{
-      await articleSummarize(dirname+filename)
-    },5000)
+  filenames.forEach(async function(filename,index) {
+    (function (filename,index){
+        setTimeout(()=>{
+          articleSummarize(dirname+filename,filename)
+          console.log(filename)
+        },index*5000)
+      }
+    )(filename,index)
+    
+    
     
   });
 }
